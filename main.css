@@ -1,37 +1,74 @@
 body {
-    
-     background: black;   
+     background: black;
 }
 
 footer {
+    display: block;
       width: 100%;
-      margin-top: 25px;
-      background: -webkit-linear-gradient(black , #909090); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(black , #909090); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(black , #909090); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(black , #909090); /* Standard syntax */
-      border-top: 5px solid #4c9da1;
+      margin: 0;
+     background: #1E3233;
+      border-top: 2px solid #4c9da1;
       color: #79fafe;
+      position: absolute;
 }
 
 #wrapper {
  width: 100%;   
 }
 
-footer img {
-margin-left: 5px;
-margin-right: 30%;
-}
+
 
 
 footer p {
+   
  font-weight: bold;
- display: inline-block;
+ text-align: center;
+ margin: 10px 0;
+    
+
+ 
+    
+    
+}
+@media screen and (max-width: 895px) {
+    
   
+     
+.subcontentcontainer div {
+    
+    display: block;
+    margin: 10px auto;
+    min-width: 200px;
+    
+    
 }
-.navbar-fixed-bottom {
-border: none;   
+    
+.subcontentcontainer {
+    width: 350px;
+    
 }
+
+ .subcontenttransparent div.contentborder {
+  
+   display: none;
+     
+ }
+    
+.subcontenttransparent div {
+ 
+    display: block;
+    margin: 25px auto;
+    
+    
+}
+    
+    
+    
+}
+
+
+
+
 /* 
 
 =========================
@@ -40,11 +77,8 @@ Navigation and header CSS
 */
 
 header {
-    
-      background: -webkit-linear-gradient(#909090 , black); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#909090 , black); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#909090 , black); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#909090, black); /* Standard syntax */
+      outline: none;
+      background: #1E3233;
       border-bottom: 3px solid #4c9da1;
     /*
       box-shadow: 0px 0px 75px 0px white;    */
@@ -63,7 +97,7 @@ nav {
 }
 
 .navbar-brand {
-    
+    outline: none;
     padding: 0 15px;   
 }
 
@@ -117,7 +151,7 @@ MAIN CONTAINER CSS
 #maincarousel {
  max-width: 900px;
  min-width: 200px;
- margin: 35px auto;
+ margin: 35px auto 50px auto;
   border-top: 2px #4c9da1 solid;
  border-bottom: 2px #4c9da1 solid;  
     
@@ -134,4 +168,114 @@ MAIN CONTAINER CSS
 }
 
 
+/*
+===================
 
+Sub content main page
+
+===================
+*/
+
+.subcontentcontainer {
+    
+ max-width: 900px;
+ min-width: 200px;
+ margin: 15px auto;
+ background: #1E3233;
+ border: 1px ridge white;
+    
+}
+
+
+.subcontentcontainer h2 {
+ font-size: 14pt;    
+ color: white;
+ text-align: center;   
+    
+}
+
+
+.subcontentcontainer p {
+ padding: 10px 0;    
+ color: white;
+    
+}
+
+.featuredpic {
+    
+     border-top: 4px solid #4c9da1;   
+    border-bottom: 4px solid #4c9da1;  
+}
+
+.homefeatured {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 4%;
+    width: 25%;
+    text-align: center;
+}
+
+.homefeatured p {
+    
+ text-align: left;
+ margin: 0 10px;    
+}
+
+.secondrowfeatured {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0 10px 25px; 
+    width: 300px;
+    height: 200px;
+    background: #1E3233;
+    border: 1px solid white;
+    
+}
+
+.secondrowfeaturedright {
+    display: inline-block;
+    margin: 10px 0px;
+    width: 300px;
+    height: 400px;
+    background: #1E3233;
+    border: 1px solid white;
+    
+}
+
+
+.subcontenttransparent {
+ 
+ max-width: 900px;
+ min-width: 200px;
+ margin: 25px auto 80px auto;
+ background: transparent;
+ color: white;    
+    
+}
+
+.subcontenttransparent h2 {
+ 
+    color: white;
+    font-size: 16pt;
+    margin: 15px 0;
+    text-align: center;
+    
+    
+}
+
+
+.contentborder {
+ vertical-align: top;
+ display: inline-block;    
+ width: 1px;
+ height: 300px;
+ border: 1px solid white;
+ margin: 10px 120px;    
+    
+}
+
+.subcontenttransparent p {
+    
+ margin: 0px 5px;   
+    
+}
